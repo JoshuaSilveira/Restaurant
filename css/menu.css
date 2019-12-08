@@ -1,0 +1,47 @@
+#menu {
+    /* background: black; */
+}
+
+
+.menu-title {
+    text-align: center;
+}
+
+.tabs-container {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.tabheader {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 6px 12px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.tabs button.active {
+    border: 1px solid !important;
+    border-bottom: none !important;
+}
+
+.tabsection {
+    border: 1px solid;
+    padding: 15px;
+}
+
+.hide-item {
+    display: none;
+}
+
+
+p {
+    /* color: #eee; */
+    /* font-size: 1.1em; */
+}
+
+.menu-price {
+    float: right;
+}

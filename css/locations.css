@@ -1,0 +1,19 @@
+body{
+  background-color:#f5f5f5;
+}
+  
+#address_1, #address_2 {
+  position: relative;
+  
+  display: none;
+  left: -1000px;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img{
+  
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+

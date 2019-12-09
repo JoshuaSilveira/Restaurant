@@ -1,38 +1,5 @@
 /* REFERENCE: W3 Schools Javascript slideshow */
 
-//showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-    //showSlides(slideIndex += n);
-}
-
-/*document.getElementsByClassName("prev")[0].style.display = "none";
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    if (slideIndex == 1) { //hide prev arrow on first slide
-        document.getElementsByClassName("prev")[0].style.display = "none";
-    }
-    else {
-        document.getElementsByClassName("prev")[0].style.display = "block";
-    }
-    if (slideIndex == slides.length) { //hide next arrow on last slide
-        document.getElementsByClassName("next")[0].style.display = "none";
-    }
-    else {
-        document.getElementsByClassName("next")[0].style.display = "block";
-    }
-
-
-    slides[slideIndex - 1].style.display = "flex";
-}*/
-
 $(document).ready(function () {
 
     $(".prev").hide()

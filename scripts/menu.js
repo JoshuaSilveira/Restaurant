@@ -1,3 +1,4 @@
+// tab functionality
 function openCourse(evt, courseName) {
     var i, tabsection, tabheader;
     tabsection = document.getElementsByClassName("tabsection");
@@ -10,5 +11,31 @@ function openCourse(evt, courseName) {
     }
     document.getElementById(courseName).style.display = "block";
     evt.currentTarget.className += " active";
-  }
-  document.getElementById("defaultOpen").click();
+}
+
+//modal functionality - My attempt to add modal image like mentioned in my CSS file
+
+// var modal = getElementsByClassName('modal');
+// var imgBtn = getElementsByClassName('view-dish');
+
+// imgBtn.onclick = function () {
+//     //console.log('cliiiickk');
+//     modal.style.display = "block";
+
+// }
+
+// var closeBtn = document.getElementsByClassName("close")[0];
+
+// closeBtn.onclick = function () {
+//     modal.style.display = "none";
+// } 
+
+jQuery(document).ready(function () {
+    
+    jQuery(".foodImage").hide();
+
+    jQuery(".foodImage").click(function () {
+        $(".foodImage").not($(this).find(".foodImage")).slideUp(1000);
+        $(this).find(".foodImage").slideToggle(1000);
+    });
+});

@@ -30,11 +30,13 @@ function openCourse(evt, courseName) {
 //     modal.style.display = "none";
 // } 
 
+
 jQuery(document).ready(function () {
     
+    // console.log("test");
     jQuery(".foodImage").hide();
 
-    jQuery(".foodImage").click(function () {
+    jQuery(".food-item").click(function () {
         $(".foodImage").not($(this).find(".foodImage")).slideUp(1000);
         $(this).find(".foodImage").slideToggle(1000);
     });

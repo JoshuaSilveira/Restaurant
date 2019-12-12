@@ -20,6 +20,7 @@ h3,
 h4,
 h5 {
     font-family: 'Raleway', sans-serif;
+    color: black;
 }
 
 * {
@@ -68,16 +69,6 @@ h5 {
     text-decoration: none;
 }
 
-#footer {
-    text-align: center;
-    background-color: darkslategray;
-    padding: 5px;
-    font-weight: 500;
-    left: 0;
-    bottom: -70px;
-    width: 100%;
-    position: fixed;
-}
 
 /*Nav Bar*/
 .hamIcon {

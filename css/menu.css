@@ -2,6 +2,15 @@
     /* background: black; */
 }
 
+html {
+    background-image: none;
+    background-color: black;
+}
+
+body {
+    background-image: none;
+}
+
 
 .menu-title {
     text-align: center;
@@ -11,6 +20,7 @@
     width: 90%;
     margin: auto;
     padding-bottom: 20px;
+    
 }
 
 .tabheader {
@@ -20,6 +30,7 @@
     padding: 6px 12px;
     font-size: 1em;
     cursor: pointer;
+    color: white;
 }
 
 .tabs button.active {
@@ -28,7 +39,7 @@
 }
 
 .tabsection {
-    border: 1px solid;
+    border: 1px solid white;
     padding: 15px;  
 }
 
@@ -50,6 +61,7 @@ p {
     border-radius: 5px;
     background-color: grey;
     margin-left: 5px;
+    color: white;
 }
 
 .tabsection p img{

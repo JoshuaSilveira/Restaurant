@@ -28,3 +28,12 @@ for (var i = 0; i < list.length; i++) {
     list[i].children[1].innerHTML=positionList[i].postionDepartment;
     list[i].children[2].innerHTML=positionList[i].postionDiscription;
 }
+jQuery(document).ready(function(){
+    jQuery(".positionDiscription").hide();
+
+    jQuery(".eventCard").click(function(){
+        $(".positionDiscription").not($(this).find(".positionDiscription")).slideUp(1000);
+        $(this).find(".positionDiscription").slideToggle(1000);
+    });
+});
+   

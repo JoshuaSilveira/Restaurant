@@ -31,7 +31,7 @@ for (var i = 0; i < list.length; i++) {
 jQuery(document).ready(function(){
     jQuery(".positionDiscription").hide();
 
-    jQuery(".eventCard").click(function(){
+    jQuery(".careerCard").click(function(){
         $(".positionDiscription").not($(this).find(".positionDiscription")).slideUp(1000);
         $(this).find(".positionDiscription").slideToggle(1000);
     });

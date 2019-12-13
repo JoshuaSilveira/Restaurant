@@ -2,17 +2,22 @@
 
 html,
 body {
-    background-image: url("../images/homepage.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
     margin: 0px;
     padding: 0px;
-    min-height: 100vh;
-    font-weight: 200;
-    z-index: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
+
+#bg-img {
+
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/homepage.jpg');
+
+}
+
 
 h1,
 h2,
@@ -69,6 +74,23 @@ h5 {
     text-decoration: none;
 }
 
+#footer {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 25px;
+    width: 100%;
+    font-weight: 100;
+
+}
+
+#footer a {
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
 
 /*Nav Bar*/
 .hamIcon {

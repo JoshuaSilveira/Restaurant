@@ -16,13 +16,16 @@ body {
 
 }
 .postionName{
+    padding: 5px;
     font-size: 1.4em;
     flex-basis: 250px;
 }
 .postionDepartment{
+    padding: 5px;
     flex-basis: 600px;
 }
-.postionDiscription{
+.positionDiscription{
+    padding: 5px;
     flex-basis: 1000px;
 }
 

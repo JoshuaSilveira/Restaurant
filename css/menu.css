@@ -49,12 +49,6 @@ body {
     display: none;
 }
 
-
-p {
-    /* color: #eee; */
-    /* font-size: 1.1em; */
-}
-
 .menu-price {
     float: right;
 }
@@ -64,6 +58,15 @@ p {
     background-color: grey;
     margin-left: 5px;
     color: black;
+}
+
+.foodImage {
+    width: 30%;
+}
+
+.foodImage img {
+    height: 100%;
+    width: 100%
 }
 
 .tabsection p img{

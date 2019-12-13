@@ -11,6 +11,7 @@ body{
     min-height: 0;
     border: 1px solid;
     margin-bottom: 10px;
+    cursor: pointer;
     
 }
 .eventDate{
@@ -45,5 +46,7 @@ body{
     
     margin: 0 auto;
     max-width: 50%;
-    color: #000;
+    
 }
+    
+

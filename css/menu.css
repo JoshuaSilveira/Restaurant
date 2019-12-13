@@ -9,6 +9,7 @@ html {
 
 body {
     background-image: none;
+    background-color: white;
 }
 
 
@@ -20,6 +21,7 @@ body {
     width: 90%;
     margin: auto;
     padding-bottom: 20px;
+    color: black;
     
 }
 
@@ -30,7 +32,7 @@ body {
     padding: 6px 12px;
     font-size: 1em;
     cursor: pointer;
-    color: white;
+    color: black;
 }
 
 .tabs button.active {
@@ -39,7 +41,7 @@ body {
 }
 
 .tabsection {
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 15px;  
 }
 
@@ -61,7 +63,7 @@ p {
     border-radius: 5px;
     background-color: grey;
     margin-left: 5px;
-    color: white;
+    color: black;
 }
 
 .tabsection p img{

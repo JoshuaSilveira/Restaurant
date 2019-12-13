@@ -6,7 +6,7 @@ function myFunction(x) {
     $("#nav").toggle();
 
 }
-
+//on click the tab opens with the nav 
 function openPage(pageName, elmnt, color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -24,7 +24,7 @@ function openPage(pageName, elmnt, color) {
 //specials
 var coll = document.getElementsByClassName("collapsible");
 var q;
-
+//goes through collection of collapsible items
 for (q = 0; q < coll.length; q++) {
     coll[q].addEventListener("click", function () {
         this.classList.toggle("active");

@@ -1,7 +1,14 @@
-body{
-    font-family: Arial, Helvetica, sans-serifl;
+* {
+    box-sizing: border-box;
+
 }
-.eventCard{
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.eventCard {
     display: flex;
     justify-content: stretch;
     align-items: center;
@@ -10,38 +17,45 @@ body{
     min-height: 0;
     border: 1px solid;
     margin-bottom: 10px;
-    
+    cursor: pointer;
+
 }
-.eventDate{
+
+.eventDate {
     font: 1.8em sans-serif;
 }
-.eventTime{
-   padding-left: 250px;
-   font-size: 1.4em;
-   flex-basis: 200px;
-   text-align: right;
-   margin-right:340px;
-}
-.eventLocation{
-    font-size: 1.4em; 
+
+.eventTime {
+    padding-left: 250px;
+    font-size: 1.4em;
     flex-basis: 200px;
     text-align: right;
-    
-    
+    margin-right: 340px;
 }
-.eventDiscription{
+
+.eventLocation {
+    font-size: 1.4em;
+    flex-basis: 200px;
+    text-align: right;
+}
+
+.eventDiscription {
     flex-basis: 1000px;
 }
-.eventName{
+
+.eventName {
     font: 1.5em sans-serif;
     flex-basis: 600px;
     text-align: right;
 }
-.eventCard > div{
+
+.eventCard > div {
     padding: 20px;
 }
-#container{
+
+#container {
+
     margin: 0 auto;
     max-width: 50%;
-    
+
 }

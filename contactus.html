@@ -62,7 +62,7 @@
     <h2>Contact Us</h2>
     <p>To get in touch with SS L'Ocean team simply fill out the contact form below.</p>
     <div class="containerbox">
-        <form>
+        <form name="contactUs" action="/action_page.php" onsubmit="return validateForm()" method="post">
             <div id="formwrap">
                 <div>
                     <label for="fname">First Name</label>
@@ -79,23 +79,26 @@
                 </div>
 
                 <div>
-                    <label for="fname">Email</label>
+                    <label for="email">Email</label>
                     <br>
-                    <input type="text" id="fname" name="firstname">
-                    <br>
-                </div>
-
-                <div>
-                    <label for="lname">Mobile</label>
-                    <br>
-                    <input type="text" id="lname" name="lastname">
+                    <input type="text" id="email" name="emailaddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     <br>
                 </div>
 
                 <div>
-                    <label for="snumber">Message</label>
+                    <label for="mobile">Mobile</label>
                     <br>
-                    <input type="text" id="snumber" name="studentnumber">
+                    <!--REGEX EXPRESSION FOR INTERNATION PHONE NUMBER-->
+                    <input type="text" id="mobile" name="mobilenumber" pattern="\+(9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42\d|3[875]\d|
+2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|
+4[987654310]|3[9643210]|2[70]|7|1)\d{1,14}$">
+                    <br>
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <br>
+                    <input type="text" id="message" name="messagetext">
                     <br>
                 </div>
 
@@ -111,6 +114,32 @@
             L'OCEAN RESTARAUNT 2019. ALL RIGHTS RESERVED
         </a>
     </footer>
+    <script>
+        function validateForm() {
+            var a = document.forms["contactUs"]["fname"].value;
+            var b = document.forms["contactUs"]["lname"].value;
+            var c = document.forms["contactUs"]["email"].value;
+            var d = document.forms["contactUs"]["mobile"].value;
+            var e = document.forms["contactUs"]["message"].value;
+            if (a == "") {
+                alert("First name must be filled out");
+                return false;
+            } else if (b == "") {
+                alert("Name must be filled out");
+                return false;
+            } else if (c == "") {
+                alert("Email address must be filled out");
+                return false;
+            } else if (d == "") {
+                alert("Mobile number must be filled out");
+                return false;
+            } else if (e == "") {
+                alert("Message must be filled out");
+                return false;
+            }
+        }
+
+    </script>
     <script src="scripts/script.js"></script>
 </body>
 

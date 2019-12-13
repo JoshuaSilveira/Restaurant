@@ -3,6 +3,10 @@ body{
   margin-left: 1vw;
  
 }
+#nav 
+{
+  z-index: +1!important ; 
+}
 #welcome_prompt{
   position: relative;
   float: left;

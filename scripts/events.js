@@ -50,6 +50,12 @@ for (var i = 0; i < list.length; i++) {
 
 jQuery(document).ready(function(){
     jQuery(".eventDiscription").hide();
+    jQuery(".eventForm").hide();
+
+    jQuery(".eventButton").click(function(){
+        //$(".eventDiscription").not($(this).find(".eventDiscription")).slideUp(1000);
+        $(".eventForm").slideToggle(1000);
+    });
 
     jQuery(".eventCard").click(function(){
         $(".eventDiscription").not($(this).find(".eventDiscription")).slideUp(1000);

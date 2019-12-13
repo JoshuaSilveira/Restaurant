@@ -1,6 +1,6 @@
 //console.log("Works!!");
 var eventsList = [
-    {
+    {//list of events
         eventName:"Board Game Night",
         eventDate:"December 12th",
         eventTime:"7pm Ship Time",
@@ -38,8 +38,8 @@ var eventsList = [
 ]
 //console.log(eventsList[0].eventDate);
 var list = document.getElementsByName("eventCard"); 
-for (var i = 0; i < list.length; i++) {
-    console.log(eventsList[i].eventDate);
+for (var i = 0; i < list.length; i++) {//loop through the elements and events
+    //console.log(eventsList[i].eventDate);for each element add the appropriate information
     list[i].children[0].innerHTML=eventsList[i].eventDate;
     list[i].children[1].innerHTML=eventsList[i].eventName;    
     list[i].children[2].innerHTML=eventsList[i].eventTime;
@@ -47,7 +47,7 @@ for (var i = 0; i < list.length; i++) {
     list[i].children[4].innerHTML=eventsList[i].eventDescription;
 
 }
-
+//validate event form
 function validateForm(){
     var numAttendees = document.forms['form']['attendees'].value;
     if(numAttendees>50||numAttendees===""){
@@ -66,18 +66,18 @@ function validateForm(){
     }
 }
 jQuery(document).ready(function(){
-    jQuery(".eventDiscription").hide();
-    jQuery(".eventForm").hide();
+    jQuery(".eventDiscription").hide();//first hide the discription
+    jQuery(".eventForm").hide();//then hide the form
 
     jQuery(".eventButton").click(function(){
         //$(".eventDiscription").not($(this).find(".eventDiscription")).slideUp(1000);
         $(".eventForm").slideToggle(1000);
-        $(".eventForm").focus();
+        $(".eventForm").focus();//toggle the form when the button is clicked
     });
 
-    jQuery(".eventCard").click(function(){
+    jQuery(".eventCard").click(function(){//when the card is clicked
         $(".eventDiscription").not($(this).find(".eventDiscription")).slideUp(1000);
-        $(this).find(".eventDiscription").slideToggle(1000);
+        $(this).find(".eventDiscription").slideToggle(1000);//toggle the current cards decription
     });
 });
    

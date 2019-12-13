@@ -1,5 +1,5 @@
 var positionList=[
-    {
+    {//current opennings list
         postionName:"Marine Operations Coordinator",
         postionDepartment:"Ship Operations", 
         postionDiscription:"Entry Level position that help with ship operations"
@@ -23,15 +23,15 @@ var positionList=[
 
 var list = document.getElementsByName("careerCard");
 console.log(list);
-for (var i = 0; i < list.length; i++) {
-    list[i].children[0].innerHTML=positionList[i].postionName;
+for (var i = 0; i < list.length; i++) {//loop through element list
+    list[i].children[0].innerHTML=positionList[i].postionName;//add to each div the right object value
     list[i].children[1].innerHTML=positionList[i].postionDepartment;
     list[i].children[2].innerHTML=positionList[i].postionDiscription;
 }
 jQuery(document).ready(function(){
     jQuery(".positionDiscription").hide();
 
-    jQuery(".careerCard").click(function(){
+    jQuery(".careerCard").click(function(){//show the description of the card that is clicked
         $(".positionDiscription").not($(this).find(".positionDiscription")).slideUp(1000);
         $(this).find(".positionDiscription").slideToggle(1000);
     });

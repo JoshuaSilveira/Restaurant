@@ -37,7 +37,7 @@ var eventsList = [
     }
 ]
 //console.log(eventsList[0].eventDate);
-var list = document.getElementsByName("eventCard"); console.log("wdiowjho");
+var list = document.getElementsByName("eventCard"); 
 for (var i = 0; i < list.length; i++) {
     console.log(eventsList[i].eventDate);
     list[i].children[0].innerHTML=eventsList[i].eventDate;

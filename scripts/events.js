@@ -48,6 +48,23 @@ for (var i = 0; i < list.length; i++) {
 
 }
 
+function validateForm(){
+    var numAttendees = document.forms['form']['attendees'].value;
+    if(numAttendees>50||numAttendees===""){
+        document.getElementById('attendeesValidation').innerHTML="No greater than 50 people or invalid entry";
+        return false;
+    }
+    var date = document.forms['form']['eventDate'].value;
+    if(date===""){
+        document.getElementById('dateValidation').innerHTML="Enter a date please";
+        return false;
+    }
+    
+    if(document.forms['form']['eventType'].selectedIndex=""){
+        document.getElementById('typeValidation').innerHTML="Pick a event type!";
+        return false;
+    }
+}
 jQuery(document).ready(function(){
     jQuery(".eventDiscription").hide();
     jQuery(".eventForm").hide();
@@ -55,6 +72,7 @@ jQuery(document).ready(function(){
     jQuery(".eventButton").click(function(){
         //$(".eventDiscription").not($(this).find(".eventDiscription")).slideUp(1000);
         $(".eventForm").slideToggle(1000);
+        $(".eventForm").focus();
     });
 
     jQuery(".eventCard").click(function(){

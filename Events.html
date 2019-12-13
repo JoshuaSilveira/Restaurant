@@ -96,15 +96,17 @@
         <div class="eventButton">
             <h2>Book an Event!</h2>
         </div>
-        <form class="eventForm" id='form'>
+        <form class="eventForm" id='form' name='form'action="/action_page.php" onsubmit="return validateForm()" method="post">
             <div class="formElement">
                 How many are attending?<br>
                 <input type="text" name="attendees">
+                <div id="attendeesValidation"></div>
             </div>
            
             <div class="formElement">
                 Which day?<br>
-                <input type="date" name="eventDate">    
+                <input type="date" name="eventDate">  
+                <div id ="dateValidation"></div>
             </div>
             <div class="formElement">
                  What are you celebrating?<br>
@@ -114,6 +116,7 @@
                 <option value="wedding">Wedding</option>
                 <option value="officeparty">Office Party</option>
             </select>
+                <div id ="typeValidation"></div>
                 <div><input value="Send Event" type="submit"></div>
             </div>
         </form>

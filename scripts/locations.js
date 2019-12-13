@@ -5,7 +5,7 @@ function pageReady(){
 };
 
 
-function myFunction() {
+function myLocationFunction() {
         var mylist = document.getElementById("myList");
         document.getElementById("demo").innerText = mylist.options[mylist.selectedIndex].text;
 

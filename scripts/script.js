@@ -19,7 +19,6 @@ function openPage(pageName, elmnt, color) {
     }
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = color;
-
 }
 
 //specials

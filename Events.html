@@ -93,20 +93,29 @@
             <div class="eventLocation"></div>
             <div class="eventDiscription"></div>
         </div>
-        <form>
-            How many are attending?
-            <input type="text" name="attendees">
-            Which day?
-            <input type="date" name="eventDate">
-            What are you celebrating?
-            <select name="eventType" size="3">
+        <div class="eventButton">
+            <h2>Book an Event!</h2>
+        </div>
+        <form class="eventForm" id='form'>
+            <div class="formElement">
+                How many are attending?<br>
+                <input type="text" name="attendees">
+            </div>
+           
+            <div class="formElement">
+                Which day?<br>
+                <input type="date" name="eventDate">    
+            </div>
+            <div class="formElement">
+                 What are you celebrating?<br>
+             <select name="eventType" size="3">
                 <option value="birthday">Birthday</option>
                 <option value="barmitzvah">Barmitzvah</option>
                 <option value="wedding">Wedding</option>
                 <option value="officeparty">Office Party</option>
-                <input type="submit">
             </select>
-
+                <div><input value="Send Event" type="submit"></div>
+            </div>
         </form>
     </div>
     <script src="scripts/events.js"></script>
